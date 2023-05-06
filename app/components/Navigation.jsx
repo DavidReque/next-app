@@ -14,11 +14,11 @@ function Navigation () {
 
   return (
     <div>
-      <header>
-        <nav>
-          <ul>
+      <header className='border border-solid border-white rounded-lg p-4'>
+        <nav className='flex justify-center'>
+          <ul className='inline-block sm:flex sm:justify-end'>
             {links.map(({ label, route }) => (
-              <li key={route}>
+              <li key={route} className='hover:underline mr-5'>
                 <Link href={route}>
                   {label}
                 </Link>
