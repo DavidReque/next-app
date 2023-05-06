@@ -9,6 +9,9 @@ function Navigation () {
   {
     label: 'About',
     route: '/about'
+  }, {
+    label: 'Posts',
+    route: '/posts'
   }
   ]
 
