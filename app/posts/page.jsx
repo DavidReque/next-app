@@ -1,8 +1,11 @@
 import React from 'react'
+import ListOfPosts from './listOfPosts'
 
 function PostPage () {
   return (
-    <div>PostPage</div>
+    <section>
+      <ListOfPosts />
+    </section>
   )
 }
 
