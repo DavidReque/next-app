@@ -1,5 +1,5 @@
 import React from 'react'
-import ListOfPosts from './listOfPosts'
+import ListOfPosts from './ListOfPosts'
 
 function PostPage () {
   return (

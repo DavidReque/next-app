@@ -1,4 +1,5 @@
 import React from 'react'
+import LikeButton from './LikeButton'
 
 async function fetchPost () {
   return fetch('https://jsonplaceholder.typicode.com/posts')
@@ -14,6 +15,7 @@ export default async function ListOfPosts () {
         <article key={post.id}>
           <h2 className='text-blue-400'>{post.title}</h2>
           <p>{post.body}</p>
+          <LikeButton />
         </article>
       ))}
     </>
