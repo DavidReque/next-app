@@ -3,6 +3,8 @@ import LikeButton from './LikeButton'
 import Link from 'next/link'
 
 async function fetchPost () {
+  await new Promise(resolve => setTimeout(resolve, 3000))
+
   return fetch('https://jsonplaceholder.typicode.com/posts', {
     next: {
       revalidate: 10

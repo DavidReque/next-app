@@ -1,6 +1,7 @@
 import React from 'react'
 
 async function fetchPost (id) {
+  await new Promise(resolve => setTimeout(resolve, 3000))
   return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, {
     next: {
       revalidate: 10

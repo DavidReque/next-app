@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ListOfPosts from './ListOfPosts'
 
 function PostPage () {
   return (
     <section>
-      <ListOfPosts />
+      <Suspense fallback={<div>Cargando ...</div>}>
+        <ListOfPosts />
+      </Suspense>
     </section>
   )
 }
