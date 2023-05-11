@@ -3,7 +3,8 @@ import './globals.css'
 import { Space_Grotesk as spaceGrotesk } from 'next/font/google'
 
 const inter = spaceGrotesk({
-  weight: ['400', '700']
+  weight: ['400', '700'],
+  subsets: ['latin']
 })
 
 export const metadata = {
